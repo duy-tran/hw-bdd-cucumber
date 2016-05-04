@@ -25,7 +25,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   When I check the following ratings: PG R
   And I uncheck the following ratings: G PG-13
   And I click on Refresh
-  Then I should see all the movies with the following ratings: PG R 
+  Then I should see all the movies with the following ratings: PG R
   And I should not see all the movies with the following ratings: G PG-13
 
 Scenario: all ratings selected
